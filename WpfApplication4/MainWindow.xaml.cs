@@ -24,5 +24,10 @@ namespace WpfApplication4
         {
             InitializeComponent();
         }
+
+        private void ButtonKlik_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

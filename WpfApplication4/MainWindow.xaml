@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfApplication4"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <Button Name="ButtonKlik" Click="ButtonKlik_Click"
+            Background="Blue" Foreground="White" Width="200" Height="200"
+            Content="Click op mij" FontSize="24" />
+
+
 </Window>
