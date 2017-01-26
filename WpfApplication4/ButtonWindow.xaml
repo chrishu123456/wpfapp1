@@ -5,10 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Button Name="ButtonKlik" Click="ButtonKlik_Click"
-            Background="Blue" Foreground="White" Width="200" Height="200"
-            Content="Click op mij" FontSize="24" />
+        Title="Button Applicatie" Height="350" Width="525">
+    <!--
+    <Canvas Margin="50" Background="Yellow">
+        <Rectangle Canvas.Left="10" Canvas.Top="10" Width="50" Height="25" Fill="Red"></Rectangle>
+        <Ellipse Canvas.Bottom="20" Canvas.Right="20" Width="50" Height="25" Fill="Blue"></Ellipse>
+    </Canvas>
+    -->
 
-
+    <Grid ShowGridLines="True" Height="250">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Name="ButtonRed" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Content="Rode achtergrond" Background="Red" Click="ButtonRed_Click"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Name="ButtonGreen" Margin="10" Content="Groene achtergrond" Background="Green" Click="ButtonGreen_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="ButtonBlue" Margin="10" Content="Blauwe achtergrond" Background="Blue" Click="ButtonBlue_Click" ></Button>
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="2" FontSize="20">Dit is Tekst over de hele breedte van het grid.</TextBlock>
+        <GridSplitter Grid.Row="0" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="2"></GridSplitter>
+    </Grid>
+   
 </Window>

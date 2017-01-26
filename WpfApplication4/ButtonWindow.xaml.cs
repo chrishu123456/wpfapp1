@@ -27,7 +27,22 @@ namespace WpfApplication4
 
         private void ButtonKlik_Click(object sender, RoutedEventArgs e)
         {
-            ButtonKlik.Content = "Je hebt geklikt";
+            // ButtonKlik.Content = "Je hebt geklikt";
+        }
+
+        private void ButtonRed_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Red);
+        }
+
+        private void ButtonGreen_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Green);
+        }
+
+        private void ButtonBlue_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Blue);
         }
     }
 }
