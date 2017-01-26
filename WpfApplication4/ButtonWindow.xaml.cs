@@ -27,7 +27,7 @@ namespace WpfApplication4
 
         private void ButtonKlik_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonKlik.Content = "Je hebt geklikt";
         }
     }
 }
