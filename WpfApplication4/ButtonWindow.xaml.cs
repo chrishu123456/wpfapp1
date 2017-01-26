@@ -25,24 +25,15 @@ namespace WpfApplication4
             InitializeComponent();
         }
 
-        private void ButtonKlik_Click(object sender, RoutedEventArgs e)
+        private void ButtonKleur_Click(object sender, RoutedEventArgs e)
         {
             // ButtonKlik.Content = "Je hebt geklikt";
+
+            Button knop = (Button)sender;
+            SolidColorBrush kleur = (SolidColorBrush)new BrushConverter().ConvertFromString(knop.Tag.ToString());
+            this.Background = kleur;
         }
 
-        private void ButtonRed_Click(object sender, RoutedEventArgs e)
-        {
-            this.Background = new SolidColorBrush(Colors.Red);
-        }
 
-        private void ButtonGreen_Click(object sender, RoutedEventArgs e)
-        {
-            this.Background = new SolidColorBrush(Colors.Green);
-        }
-
-        private void ButtonBlue_Click(object sender, RoutedEventArgs e)
-        {
-            this.Background = new SolidColorBrush(Colors.Blue);
-        }
     }
 }
